@@ -10,15 +10,14 @@ Exec {
     path => "/usr/local/bin:/usr/bin:/usr/sbin:/sbin:/bin",
 }
 
+stage { 'req-install': before => Stage['rvm-install'] }
+
 class dev {
     class {
-        init: ;
-        python: require => Class[init];
-#        openbox: require => Class[init];
-
-#        ipython_notebook: require => Class[python];
-#        robot: require => Class[python];
+        init: stage => 'req-install';
+#        python: require => Class[init];
     }
+    include installrvm
 }
 
 include dev
