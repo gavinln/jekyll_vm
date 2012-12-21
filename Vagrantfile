@@ -58,7 +58,7 @@ Vagrant::Config.run do |config|
     puppet.manifest_file  = "vagrant.pp"
     puppet.manifests_path = "puppet/manifests"
     puppet.module_path    = "puppet/modules"
-    puppet.options = [ "--pluginsync" ]
+    puppet.options        = ["--pluginsync"]
     #puppet.options = "--verbose --debug"
   end
 

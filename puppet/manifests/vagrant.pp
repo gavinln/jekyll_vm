@@ -15,7 +15,7 @@ stage { 'req-install': before => Stage['rvm-install'] }
 class dev {
     class {
         init: stage => 'req-install';
-#        python: require => Class[init];
+        python: require => Class[init];
     }
     include installrvm
 }
