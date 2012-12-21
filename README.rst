@@ -1,6 +1,6 @@
-===========
-selenium_py
-===========
+=========
+jekyll_vm
+=========
 
 :Info: See `github <https://github.com/gavinln/jekyll_vm.git>`_ for the latest source.
 :Author: Gavin Noronha <gavinln@hotmail.com>
@@ -9,16 +9,12 @@ About
 =====
 
 This project demonstrates the following technologies.
+
     #. Vagrant vm
     #. Puppet to install all software
     #. Python
     #. Ruby
-
-Using
------
-
-The web notebooks are available at `<http://localhost:8888/>`_ are are used to
-run Selenium to control a Firefox web browser and capture screenshots.
+    #. Jekyll bootstrap
 
 Running
 =======
