@@ -56,13 +56,7 @@ Running
 
     jekyll --server
 
-# Open the jekyll blog in a browser at `<http://localhost:4000/>`_
-
-pygmentize -S default -f html > css/pygments/default.css
-assets\themes\twitter\css\pygments.css
-
-Need to add pygments.css to _includes/themes/twitter/default.html
-or just add styles to the end of styles.css
+#. Open the jekyll blog in a browser at `<http://localhost:4000/>`_
 
 Requirements
 ------------
