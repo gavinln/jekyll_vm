@@ -1,4 +1,4 @@
-=========
+========
 jekyll_vm
 =========
 
@@ -31,7 +31,6 @@ Running
 
     REM on windows
     vm\ssh_vagrant.bat
-
     or
     python vm\ssh_vagrant.py
 
@@ -56,7 +55,7 @@ Running
 
     jekyll --server
 
-#. Open the jekyll blog in a browser at `<http://localhost:4000/>`_
+#. Open the jekyll blog in a browser at `<http://localhost:4000/>`_::
 
 Requirements
 ------------
