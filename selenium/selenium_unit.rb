@@ -13,7 +13,7 @@ class YahooSeleniumSearchTests < Test::Unit::TestCase
         @browser.get 'http://www.yahoo.com' 
 
         assert_nothing_raised do
-            elem = @browser.find_element :name, 'p1'
+            elem = @browser.find_element :name, 'p'
             elem.send_keys 'seleniumhq'
             elem.send_keys :return
             @wait.until { @browser.title.include? 'seleniumhq' }

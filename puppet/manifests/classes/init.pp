@@ -19,8 +19,8 @@ class init {
                     Exec['update_apt'],
                 ];
             }
-            # java and other utilities
-            $misc_packages = ["git-core"]
+            # other utilities
+            $misc_packages = ["git-core", "vim"]
             package { $misc_packages:
                 ensure => present,
                 require => [
