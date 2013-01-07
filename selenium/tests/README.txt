@@ -11,3 +11,9 @@ rspec sample_rspec_w_capybara_spec.rb
 cd cucumber
 cucumber
 
+For sample_test_unit.rb need the following
+gem install nokogiri
+gem install shoulda
+
+For sample_rspec_spec.rb need the following
+gem install rspec-core

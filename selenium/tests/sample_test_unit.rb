@@ -26,7 +26,7 @@ end
 
 class TestWebPage < Test::Unit::TestCase
   should "return 'Google' in the title element of the page" do
-    page = WebPage.new('http://www.google.co.in/')
-    assert_equal "Google", page.title
+    page = WebPage.new('http://www.google.com/')
+    assert_equal "Google2", page.title
   end
 end
