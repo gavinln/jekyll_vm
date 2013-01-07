@@ -17,3 +17,9 @@ gem install shoulda
 
 For sample_rspec_spec.rb need the following
 gem install rspec-core
+
+For sample_rspec_w_capybara_spec.rb need the following
+gem install capybara
+gem install capybara-mechanize
+
+gem install headless
