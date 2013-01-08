@@ -29,3 +29,8 @@ rspec selenium_rspec_capybara.rb
 10. Cucumber test with capybara
 cd /vagrant/selenium/cucumber
 cucumber
+
+To install google-chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_i386.deb
+sudo dpkg -i google-chrome*
+Download chromedriver from http://code.google.com/p/chromedriver/downloads/list
