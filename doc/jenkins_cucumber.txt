@@ -1,0 +1,19 @@
+1. Change to jenkins jobs directory
+cd /vagrant/vm
+
+2. Find ip address (inet addr)
+ifconfig eth1
+
+3. Go to jenkins URL (ip_address from step 3)
+http://ip_address:8080
+
+4. Click on Manage Jenkins/Manage Plugins/Advanced
+
+5. In "Upload Plugin" File select cucumber-reports-0.0.19.hpi
+
+6. Click "Download now and install after restart"
+
+7. Create job
+./create-job_cucumber_test.sh
+
+
