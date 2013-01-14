@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers class="vector"/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash -l
+
+rvm use 1.9.3-p327
+cd /vagrant/selenium/cucumber
+set -x
+
+HEADLESS=true cucumber --format json -o cucumber.json
+cp cucumber.json /var/lib/jenkins/jobs/cucumber_test/workspace</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <net.masterthought.jenkins.CucumberReportPublisher>
+      <jsonReportDirectory></jsonReportDirectory>
+      <pluginUrlPath></pluginUrlPath>
+      <skippedFails>false</skippedFails>
+      <undefinedFails>false</undefinedFails>
+      <noFlashCharts>false</noFlashCharts>
+    </net.masterthought.jenkins.CucumberReportPublisher>
+  </publishers>
+  <buildWrappers/>
+</project>

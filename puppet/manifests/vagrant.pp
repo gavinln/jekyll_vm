@@ -16,6 +16,7 @@ class dev {
     class {
         init: stage => 'req-install';
         python: require => Class[init];
+        jenkins: require => Class[init];
         custom: require => Class[init];
     }
     include installrvm
