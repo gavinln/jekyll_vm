@@ -76,7 +76,9 @@ Running
 
 7. Start the `jekyll` server
 
+    ```bash
     jekyll --server
+    ```
 
 8. Open the jekyll blog in a browser at <http://localhost:4000/>
 
