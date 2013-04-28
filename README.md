@@ -54,13 +54,17 @@ Running
     vagrant ssh
     ```
 
-4. To list the installed rubies::
+4. To list the installed rubies
 
+    ```basn
     rvm list
+    ```
 
-5. To setup the current shell to use a specific version::
+5. To setup the current shell to use a specific version
 
-    rvm use ruby-1.9.3-p327
+    ```bash
+    rvm use ruby-1.9.3-p392
+    ```
 
 6. Clone the `jekyll-bootstrap` project
 
