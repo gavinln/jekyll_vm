@@ -74,7 +74,7 @@ Running
 
     jekyll --server
 
-8. Open the jekyll blog in a browser at `<http://localhost:4000/>`
+8. Open the jekyll blog in a browser at <http://localhost:4000/>
 
 
 Requirements
