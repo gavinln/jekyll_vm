@@ -20,8 +20,7 @@ class init {
                 ];
             }
             # other utilities
-            $misc_packages = ["git-core", "vim"]
-            package { $misc_packages:
+            package { "git-core":
                 ensure => present,
                 require => [
                     Exec['update_apt'],

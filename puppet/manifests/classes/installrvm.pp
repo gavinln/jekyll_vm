@@ -6,40 +6,14 @@ class installrvm {
     rvm::system_user { vagrant: ; }
 
     if $rvm_installed == "true" {
-        rvm_system_ruby {'ruby-1.9.3-p327':
+        rvm_system_ruby {'ruby-1.9.3-p392':
               ensure => 'present';
         }
         rvm_gem {'jekyll':
             name => 'jekyll',
-            ruby_version => 'ruby-1.9.3-p327',
+            ruby_version => 'ruby-1.9.3-p392',
             ensure => latest,
-            require => Rvm_system_ruby['ruby-1.9.3-p327'];
-        }
-        rvm_gem {'selenium-webdriver':
-            name => 'selenium-webdriver',
-            ruby_version => 'ruby-1.9.3-p327',
-            ensure => latest,
-            require => Rvm_system_ruby['ruby-1.9.3-p327'];
-        }
-        rvm_gem {'rspec':
-            ruby_version => 'ruby-1.9.3-p327',
-            ensure => latest,
-            require => Rvm_system_ruby['ruby-1.9.3-p327'];
-        }
-        rvm_gem {'capybara':
-            ruby_version => 'ruby-1.9.3-p327',
-            ensure => latest,
-            require => Rvm_system_ruby['ruby-1.9.3-p327'];
-        }
-        rvm_gem {'headless':
-            ruby_version => 'ruby-1.9.3-p327',
-            ensure => latest,
-            require => Rvm_system_ruby['ruby-1.9.3-p327'];
-        }
-        rvm_gem {'cucumber':
-            ruby_version => 'ruby-1.9.3-p327',
-            ensure => latest,
-            require => Rvm_system_ruby['ruby-1.9.3-p327'];
+            require => Rvm_system_ruby['ruby-1.9.3-p392'];
         }
    }
 }

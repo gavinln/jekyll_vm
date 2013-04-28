@@ -15,11 +15,9 @@ stage { 'req-install': before => Stage['rvm-install'] }
 class dev {
     class {
         init: stage => 'req-install';
+        installrvm: require => Class[init];
         python: require => Class[init];
-        jenkins: require => Class[init];
-        custom: require => Class[init];
     }
-    include installrvm
 }
 
 include dev
