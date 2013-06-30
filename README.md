@@ -42,21 +42,13 @@ Running
 
 3. Connect to the VM
 
-    ```bat
-    REM on windows
-    vm\ssh_vagrant.bat
-    REM If Python is installed
-    python vm\ssh_vagrant.py
     ```
-
-    ```bash
-    # on unix
     vagrant ssh
     ```
 
 4. To list the installed rubies
 
-    ```basn
+    ```bash
     rvm list
     ```
 
@@ -65,8 +57,14 @@ Running
     ```bash
     rvm use ruby-1.9.3-p392
     ```
+    
+6. Verify the version of ruby installed (should show verion in step 5)
+ 
+    ```bash
+    ruby -v
+    ```
 
-6. Clone the `jekyll-bootstrap` project
+7. Clone the `jekyll-bootstrap` project
 
     ```bash
     cd /vagrant/jekyll
@@ -74,13 +72,13 @@ Running
     cd jekyll-bootstrap
     ```
 
-7. Start the `jekyll` server
+8. Start the `jekyll` server
 
     ```bash
     jekyll --server
     ```
 
-8. Open the jekyll blog in a browser at <http://localhost:4000/>
+9. Open the jekyll blog in a browser at <http://localhost:4000/>
 
 
 Requirements
